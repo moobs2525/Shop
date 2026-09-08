@@ -1,10 +1,12 @@
-﻿namespace Shop.Application;
+﻿using Shop.Domain;
 
-public class ShowAllItem
+namespace Shop.Application;
+
+public class ShowAllItems
 {
     private readonly IItemRepository repository;
 
-    public ShowAllItem(IItemRepository repository)
+    public ShowAllItems(IItemRepository repository)
     {
         this.repository = repository;
     }
